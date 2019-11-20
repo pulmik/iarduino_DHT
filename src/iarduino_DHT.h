@@ -28,6 +28,7 @@ class iarduino_DHT{
 		int8_t	read();					//	возвращает № ошибки
 		float 	hum;					//	значение влажности   в %
 		float	tem;					//	значение температуры в °C
+		void 	setPin(uint8_t i);
 	private:
 	    uint8_t	PinDHT;					//	номер вывода к которому подключён датчик
 		int8_t	readSDA();				//	чтение шины SDA в массив reply

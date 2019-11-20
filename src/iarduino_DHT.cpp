@@ -34,3 +34,5 @@ int8_t	iarduino_DHT::readSDA(){																											//
 //		Если в данной функции датчик определить не удалось, то будет использовано значение model определённое ранее							//
 		return DHT_OK;																														//
 }																																			//
+
+void	iarduino_DHT::setPin(uint8_t i){PinDHT=i;}
